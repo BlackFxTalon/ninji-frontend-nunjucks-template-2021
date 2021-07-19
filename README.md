@@ -6,7 +6,7 @@ my new template for frontend development in 2021 (gulp + webpack + sass + nunjuc
 
 ## clone project
 
-<code>git clone https://github.com/BlackFxTalon/ninji-frontend-template-2021</code>
+<code>git clone https://github.com/BlackFxTalon/ninji-frontend-nunjucks-template-2021</code>
 
 ## install dependencies
 
