@@ -8,13 +8,17 @@ body {
     overflow-x: hidden;
     // font-family: Qanelas-Regular, sans-serif;
     font-size: toRem(16);
+    font-size: clampBuilder(320, 1440, 14, 16);
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+body > * {
+    --max-width: 1440px;
+    width: Min(100%, var(--max-width));
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: toRem(30);
+    padding-right: toRem(30);
+}
+:is(h1, h2, h3, h4, h5, h6) {
     margin: 0;
     padding: 0;
 }
@@ -22,31 +26,4 @@ img {
     max-width: 100%;
     height: auto;
 }
-.container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: toRem(30);
-    padding-right: toRem(30);
-
-    @include media-extra-small() {
-        max-width: 100%;
-    }
-    @include media-small() {
-        max-width: 540px;
-    }
-    @include media-medium() {
-        max-width: 720px;
-    }
-    @include media-large() {
-        max-width: 960px;
-    }
-    @include media-extra-large() {
-        max-width: 1140px;
-    }
-    @include media-Extra-extra-large() {
-        max-width: 1320px;
-    }
-}
-
 /* global styles - end */
