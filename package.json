@@ -49,6 +49,13 @@
         "imagemin-webp": "^6.0.0",
         "nunjucks": "^3.2.3",
         "require-dir": "^1.2.0",
+        "stylelint": "^13.13.1",
+        "stylelint-a11y": "^1.2.3",
+        "stylelint-color-format": "^1.1.0",
+        "stylelint-config-prettier": "^8.0.2",
+        "stylelint-config-standard": "^22.0.0",
+        "stylelint-declaration-block-no-ignored-properties": "^2.4.0",
+        "stylelint-order": "^4.1.0",
         "webpack": "^5.11.1",
         "webpack-stream": "^6.1.1",
         "yargs": "^16.2.0"

@@ -1,29 +1,31 @@
 /* global styles - start */
 
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-    overflow-x: hidden;
-    // font-family: Qanelas-Regular, sans-serif;
-    font-size: toRem(16);
-    font-size: clampBuilder(320, 1440, 14, 16);
+	overflow-x: hidden;
+	// font-family: Qanelas-Regular, sans-serif;
+	font-size: toRem(16);
+	font-size: clampBuilder(320, 1440, 14, 16);
 }
 body > * {
-    --max-width: 1440px;
-    width: Min(100%, var(--max-width));
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: toRem(30);
-    padding-right: toRem(30);
+	--max-width: 1440px;
+
+	width: Min(100%, var(--max-width));
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: toRem(30);
+	padding-right: toRem(30);
 }
 :is(h1, h2, h3, h4, h5, h6) {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 img {
-    max-width: 100%;
-    height: auto;
+	max-width: 100%;
+	height: auto;
 }
+
 /* global styles - end */
