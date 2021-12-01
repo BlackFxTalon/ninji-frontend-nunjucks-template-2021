@@ -23,6 +23,10 @@ module.exports = {
         chunkFilename: "[name].js",
         publicPath: "/",
     },
+    
+    optimization: {
+        minimize: false,
+      },
 
     module: {
         rules: [
