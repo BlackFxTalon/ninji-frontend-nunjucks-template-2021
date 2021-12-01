@@ -29,8 +29,8 @@ gulp.task("styles", () => {
                 production,
                 autoprefixer({
                     cascade: false,
-                }),
-            ),
+                })
+            )
         )
         .pipe(
             gulpif(
@@ -53,8 +53,8 @@ gulp.task("styles", () => {
                             removeUnusedAtRules: false,
                         },
                     },
-                }),
-            ),
+                })
+            )
         )
         .pipe(gulp.dest(paths.styles.dist))
         .pipe(
@@ -62,8 +62,8 @@ gulp.task("styles", () => {
                 production,
                 rename({
                     suffix: ".min",
-                }),
-            ),
+                })
+            )
         )
         .pipe(plumber.stop())
         .pipe(gulpif(!production, sourcemaps.write("./maps/")))
@@ -71,7 +71,7 @@ gulp.task("styles", () => {
         .pipe(
             debug({
                 title: "CSS files",
-            }),
+            })
         )
         .on("end", browsersync.reload);
 });
