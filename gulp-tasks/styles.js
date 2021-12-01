@@ -29,7 +29,6 @@ gulp.task("styles", () => {
                 production,
                 autoprefixer({
                     cascade: false,
-                    grid: true,
                 }),
             ),
         )
