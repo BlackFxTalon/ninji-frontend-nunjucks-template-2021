@@ -32,6 +32,7 @@ gulp.task("styles", () => {
                 })
             )
         )
+        .pipe(gulp.dest(paths.styles.dist))
         .pipe(
             gulpif(
                 production,
