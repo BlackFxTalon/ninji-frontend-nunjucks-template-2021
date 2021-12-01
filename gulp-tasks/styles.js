@@ -36,8 +36,6 @@ gulp.task("styles", () => {
             gulpif(
                 production,
                 mincss({
-                    // for ie
-                    // compatibility: "ie8",
                     level: {
                         1: {
                             specialComments: 0,
