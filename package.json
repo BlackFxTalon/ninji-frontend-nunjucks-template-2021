@@ -29,7 +29,6 @@
         "gulp-w3c-html-validator": "^5.1.2",
         "gulp-webp": "^4.0.1",
         "gulp-webp-html-nosvg": "^1.0.6",
-        "gulp-webpcss": "^1.1.1",
         "sass": "^1.49.11",
         "swiper": "^8.0.7",
         "vinyl-ftp": "^0.6.1",
